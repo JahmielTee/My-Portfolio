@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+.light-mode {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+header.hero {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #2980b9, #2c3e50);
+}
+header .avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #fff;
+}
+button#modeToggle, .btn, form button {
+    background-color: #3498db;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.skill-card {
+    background: #34495e;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1 1 150px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+.light-mode .skill-card {
+    background: #e0e0e0;
+}
+.graphics {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.graphics img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+footer {
+    background: #2c3e50;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.light-mode footer {
+    background: #ddd;
+    color: #000;
+}
